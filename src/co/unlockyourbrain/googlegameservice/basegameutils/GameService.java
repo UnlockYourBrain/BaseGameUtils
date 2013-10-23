@@ -11,7 +11,7 @@ import android.content.Intent;
  * This class is similar to the BaseGameActivity. For reference please read that class.
  * Created by john on 16/10/13.
  */
-public abstract class GamesService implements GameHelper.GameHelperListener {
+public abstract class GameService implements GameHelper.GameHelperListener {
 	
 	public static final int CLIENT_GAMES = GameHelper.CLIENT_GAMES;
     public static final int CLIENT_APPSTATE = GameHelper.CLIENT_APPSTATE;
@@ -25,12 +25,12 @@ public abstract class GamesService implements GameHelper.GameHelperListener {
 	protected int mRequestedClients = GameHelper.CLIENT_GAMES;
 	private String[] mAdditionalScopes;
 	
-	public GamesService(Activity activity){
+	public GameService(Activity activity){
 		this.activity = activity;
 		mHelper = new GameHelper(activity);
 	}
 	
-	public GamesService(Activity activity, int requestedClients){
+	public GameService(Activity activity, int requestedClients){
 		this.activity = activity;
 		setRequestedClients(requestedClients);
 	}
