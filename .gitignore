@@ -1,4 +1,7 @@
 /bin/
+
 /build/
 /gen/
+.settings/
+
 *.iml
