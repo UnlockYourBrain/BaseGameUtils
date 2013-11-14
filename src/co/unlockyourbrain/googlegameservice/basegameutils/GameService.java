@@ -20,7 +20,7 @@ public abstract class GameService implements GameHelper.GameHelperListener {
 	
 	private GameHelper mHelper;
 	private Activity activity;
-	private boolean mDebugLog = true;
+	private boolean mDebugLog = false;
 	protected String mDebugTag = "GameService";
 	protected int mRequestedClients = GameHelper.CLIENT_GAMES;
 	private String[] mAdditionalScopes;
